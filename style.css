@@ -76,23 +76,28 @@ header li a:hover {
     margin: 0 10%;
     padding: 4.5rem 0;
 }
-.current {
+.current-image {
     border-radius: 12px;
     margin-bottom: 1.3rem;
 }
 
-.current-thumbnail {
+.thumbnail-wrapper {
     border: 2.5px solid var(--orange);
+    border-radius: 12px;
+    height: 77.7px;
+}
+.current-thumbnail {
+    opacity: 0.3;
 }
 
-.thumbnail {
+.thumbnails {
     display: flex;
     justify-content: space-between;
 }
-.thumbnail li {
+.thumbnails li {
     margin: 0;
 }
-.thumbnail img {
+.thumbnails img {
     margin: 0;
     height: 4.7rem;
     border-radius: 8px;
