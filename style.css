@@ -73,6 +73,9 @@ header li a:hover {
 .main-section {
     flex-grow: 1;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5rem;
     margin: 0 10%;
     padding: 4.5rem 0;
 }
@@ -89,7 +92,6 @@ header li a:hover {
 .current-thumbnail {
     opacity: 0.3;
 }
-
 .thumbnails {
     display: flex;
     justify-content: space-between;
@@ -101,4 +103,92 @@ header li a:hover {
     margin: 0;
     height: 4.7rem;
     border-radius: 8px;
+}
+.thumbnails img:hover {
+    opacity: 0.65;
+}
+
+.infos {
+    width: 35%;
+}
+.company-name {
+    color: var(--orange);
+    font-size: 12px;
+    font-family: "kumbh Sans Bold","sans-serif";
+    margin-bottom: 0.6rem;
+}
+.product-title {
+    font-family: "kumbh Sans Bold","sans-serif";
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.description {
+    font-size: 15px;
+    color: hsl(219, 9%, 45%);
+    margin-bottom: 2rem;
+}
+.prices {
+    position: relative;
+}
+.current-price {
+    font-family: "kumbh Sans Bold","sans-serif";
+    font-size: 1.4rem;
+    margin-right: 15px;
+    display: inline-block;
+}
+.sold {
+    color: var(--orange);
+    font-size: 13.5px;
+    font-family: "kumbh Sans Bold",sans-serif;
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 5px;
+    padding: 2px 7px;
+    position: absolute;
+    bottom: 23.8px;
+}
+.old-price {
+    color: hsl(219, 9%, 45%);
+    font-size: 12px;
+}
+
+.products-number {
+    background-color: hsl(223, 64%, 98%);
+    display: inline-block;
+    border-radius: 6px;
+    padding: 0.6em 10px;
+    margin: 2rem 0;
+}
+#count {
+    font-weight: bold;
+    margin: 0 30px;
+}
+#minus, #plus {
+    cursor: pointer;
+    font-family: "kumbh Sans Bold",sans-serif;
+    font-weight: bold;
+    color: var(--orange);
+    font-size: 20px;
+}
+#minus:hover, #plus:hover {
+    color: hsla(26, 100%, 55%,70%);
+}
+button {
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-family: "kumbh Sans Bold",sans-serif;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6em 4em;
+    margin-left: 1rem;
+    box-shadow: 0 15px 30px -8px hsla(26, 100%, 55%,40%);
+}
+button img {
+    filter: brightness(0) invert(1) ;
+    width: 0.8rem;
+    margin-right: 15px;
+}
+button:hover{
+    background-color: hsla(26, 100%, 55%,70%);
 }
