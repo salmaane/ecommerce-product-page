@@ -80,6 +80,7 @@ header li a:hover {
     padding: 4.5rem 0;
 }
 .current-image {
+    height: 400px;
     border-radius: 12px;
     margin-bottom: 1.3rem;
 }
@@ -104,7 +105,7 @@ header li a:hover {
     height: 4.7rem;
     border-radius: 8px;
 }
-.thumbnails img:hover {
+.thumbnails img:hover:not(.current-thumbnail) {
     opacity: 0.65;
 }
 
