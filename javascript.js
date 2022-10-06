@@ -10,7 +10,7 @@ imagesBox.onclick = function(event) {
   let thumbnailWrapper = document.querySelector(".thumbnail-wrapper");
   thumbnailWrapper.classList.remove("thumbnail-wrapper");
 
-  currentImage.src = target.src;
+  currentImage.src = target.getAttribute("src").slice(0,22) + '.jpg';
   target.classList.add("current-thumbnail");
   target.parentElement.classList.add("thumbnail-wrapper");
 }
