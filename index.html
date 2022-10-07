@@ -27,6 +27,24 @@
       <img src="images/icon-cart.svg" alt="cart" class="cart">
       <img src="images/image-avatar.png" class="avatar">
     </div>
+    <div class="cart-content">
+      <h5>Cart</h5><hr>
+      <p class="empty">Your cart is empty.</p>
+      <div class="content">
+        <div class="cart-product">
+          <img src="images/image-product-1-thumbnail.jpg">
+          <div>
+            <p>Fall Limited Edition Sneakers</p>
+            <span class="small-current-price">$125.00</span>
+            <span style="color:hsl(219, 9%, 45%);">x</span>
+            <span class="count small-current-price">0</span>
+            <span class="total">$000.00</span>
+          </div>
+          <img src="images/icon-delete.svg" style="height:17px;cursor:pointer;margin-left: 15px">
+        </div>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
   </header>
   <section class="main-section">
     <div class="product-image-gallery">
@@ -54,11 +72,11 @@
       </div>
       <div class="add-to-cart">
         <div class="products-number">
-          <span id="minus">-</span>
+          <button id="minus">-</button>
           <span id="count">0</span>
-          <span id="plus">+</span>
+          <button id="plus">+</button>
         </div>
-        <button><img src="images/icon-cart.svg">Add to cart</button>
+        <button class="add"><img src="images/icon-cart.svg">Add to cart</button>
       </div>
     </div>
   </section>

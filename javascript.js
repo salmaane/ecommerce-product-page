@@ -14,3 +14,16 @@ imagesBox.onclick = function(event) {
   target.classList.add("current-thumbnail");
   target.parentElement.classList.add("thumbnail-wrapper");
 }
+
+
+let minus = document.getElementById("minus");
+let plus = document.getElementById("plus");
+
+minus.onclick = function(){
+  let count = document.getElementById("count");
+  if(count.innerHTML === '0') return;
+  count.innerHTML = `${parseInt(count.innerHTML) - 1}`;
+}
+plus.onclick = function(){
+  count.innerHTML = `${parseInt(count.innerHTML) + 1}`;
+}
