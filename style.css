@@ -121,6 +121,7 @@ header li a:hover {
     border: 2.5px solid var(--orange);
     border-radius: 12px;
     height: 77.7px;
+    background-color: white;
 }
 .current-thumbnail {
     opacity: 0.3;
@@ -129,8 +130,10 @@ header li a:hover {
     display: flex;
     justify-content: space-between;
 }
-.thumbnails li {
-    margin: 0;
+.thumbnails li:not(.thumbnail-wrapper) {
+    background-color: hsl(0,0%,100%);
+    height: 4.7rem;
+    border-radius: 8px;
 }
 .thumbnails img {
     margin: 0;
@@ -298,4 +301,57 @@ button.add:hover, #checkout:hover{
     border: none;
     border-radius: 8px;
     padding: 0.6em 4em;
+}
+
+.lightbox-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+}
+#lightbox-thumbnails {
+    width: 480px;
+}
+#lightbox {
+    position: absolute;
+    top:12.5%;
+    left: 35%;
+}
+#lightbox-image {
+    box-shadow: 0 0 0 100rem hsla(0,0%,0%,75%);
+    height: 480px;
+}
+#lightbox-thumbnails {
+    justify-content: space-evenly;
+}
+#lightbox-thumbnails li {
+    margin:0;
+}
+#previous, #next {
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    position: absolute;
+    top: 13.4rem;
+}
+#previous:hover, #next:hover {
+    filter: invert(1);
+}
+#previous {
+    left: -1.5rem;
+}
+#next {
+    right: -1.5rem;
+}
+#close {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    height: 1.3rem;
+    filter: brightness(0) invert(1);
+}
+#close:hover {
+    filter: contrast(500%) invert(1) ;
 }

@@ -64,3 +64,34 @@ let deleteItem = document.querySelector('.delete');
     icon.style.display = 'none';
     content.style.display = '';
 }
+
+// ======== LIGHTBOX ===========
+let lightboxWrapper = document.querySelector('.lightbox-wrapper');
+let lightboxCurrentImage = document.getElementById('lightbox-image');
+currentImage.onclick = function () {
+  lightboxCurrentImage.src = this.getAttribute("src").slice(0,22) + '.jpg';
+  lightboxWrapper.style.display = 'block';
+}
+
+
+let lightboxThumbs = document.getElementById('lightbox-thumbnails');
+lightboxThumbs.onclick = function(event) {
+  let target = event.target;
+  if(target.tagName !== 'IMG') return;
+
+  let currentThumbnail = lightboxThumbs.querySelector(".current-thumbnail");
+  currentThumbnail.classList.remove("current-thumbnail");
+  let thumbnailWrapper = lightboxThumbs.querySelector(".thumbnail-wrapper");
+  thumbnailWrapper.classList.remove("thumbnail-wrapper");
+
+  lightboxCurrentImage.src = target.getAttribute("src").slice(0,22) + '.jpg';
+  target.classList.add("current-thumbnail");
+  target.parentElement.classList.add("thumbnail-wrapper");
+}
+
+
+let close = document.getElementById('close');
+close.onclick = function() {
+  let lightboxWrapper = document.querySelector('.lightbox-wrapper');
+  lightboxWrapper.style.display = 'none';
+}
