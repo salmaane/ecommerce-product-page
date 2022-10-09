@@ -71,6 +71,9 @@ header li a:hover {
 .cart:hover {
     filter: brightness(0%);
 }
+.menu {
+    display: none;
+}
 #count-icon {
     display: none;
     color: white;
@@ -354,4 +357,112 @@ button.add:hover, #checkout:hover{
 }
 #close:hover {
     filter: contrast(500%) invert(1) ;
+}
+
+
+@media screen and (max-width: 600px) {
+    .list a{
+        color: black;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 70%;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 0 0 0 50rem hsla(0,0%,0%,75%);
+        display: none;
+        flex-direction: column;
+        padding: 10rem 2rem;
+    }
+    .list li {
+        margin-bottom: 1rem;
+    }
+    .close-menu {
+        display: none;
+        height: 1.5rem;
+        position: fixed;
+        left: 25px;
+        top: 25px;
+        z-index: 11;
+    }
+    br {
+        display: none;
+    }
+    header {
+        width: 100%;
+        border-bottom: none;
+        margin: 0;
+        padding: 1rem 1rem 1.2rem 1rem;
+    }
+    main {
+        height: auto;
+    }
+    .menu {
+        display: block;
+    }
+    .cart {
+        height: 1.2rem;
+    }
+    .avatar {
+        height: 1.8rem;
+        margin-left: 1rem;
+    }
+    .thumbnails {
+        display: none;
+    }
+    .current-image {
+        margin: 0;
+    }
+    .add-to-cart {
+        flex-direction: column;
+    }
+
+    .product-title {
+        font-size: 2rem;
+    }
+    .main-section {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 0 3rem 0;
+        padding: 0 1.2rem;
+    }
+    .infos {
+        width: 100%;
+    }
+    .sold{
+        position: relative;
+        bottom: 4px;
+    }
+    .old-price {
+        position: absolute;
+        right: 15px;
+        top: 3px;
+        font-size: 15px;
+    }
+    .products-number {
+        width: 100%;
+        margin: 1.4rem 0 1.1rem 0;
+    }
+    #count {
+        position: absolute;
+        left: 40%;
+    }
+    button.add {
+        width: 100%;
+        margin: 0;
+    }
+    .cart-content {
+        right: 0;
+        top: 4.5rem;
+        width: 96%;
+        margin: 0 0.5rem;
+    }
+
 }

@@ -95,3 +95,28 @@ close.onclick = function() {
   let lightboxWrapper = document.querySelector('.lightbox-wrapper');
   lightboxWrapper.style.display = 'none';
 }
+
+
+// ========= menu for mobile ============
+
+let menu = document.querySelector(".menu");
+let closeMenu = document.querySelector(".close-menu");
+
+menu.onclick = function() {
+  dropMenu();
+}
+closeMenu.onclick = function() {
+  dropMenu();
+}
+
+function dropMenu() {
+  let list = document.querySelector(".list");
+  if(list.style.display === ''){
+    list.style.display = 'flex';
+    closeMenu.style.display = 'block';
+  }else {
+    list.style.display = '';
+    closeMenu.style.display = '';
+  }
+}
+

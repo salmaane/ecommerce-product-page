@@ -14,8 +14,12 @@
 <main>
   <header>
     <nav>
-      <img src="images/logo.svg" alt="logo">
-      <ul>
+      <div style="display: flex;align-items: end;gap:1rem;">
+        <img src="images/icon-menu.svg" class="menu">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <img src="images/icon-close.svg" class="close-menu">
+      <ul class="list">
         <li><a>Collections</a></li>
         <li><a>Men</a></li>
         <li><a>Women</a></li>
@@ -27,24 +31,24 @@
       <img src="images/icon-cart.svg" alt="cart" class="cart">
       <span id="count-icon">0</span>
       <img src="images/image-avatar.png" class="avatar">
-      <div class="cart-content">
-        <h5>Cart</h5><hr>
-        <p class="empty">Your cart is empty.</p>
-        <div class="content">
-          <div class="cart-product">
-            <img src="images/image-product-1-thumbnail.jpg">
-            <div>
-              <p>Fall Limited Edition Sneakers</p>
-              <span class="small-current-price">$125.00</span>
-              <span style="color:hsl(219, 9%, 45%);">x</span>
-              <span class="count small-current-price">0</span>
-              <span class="total">$000.00</span>
-            </div>
-            <img src="images/icon-delete.svg" class="delete"
-                 style="height:17px;cursor:pointer;margin-left: 15px">
+    </div>
+    <div class="cart-content">
+      <h5>Cart</h5><hr>
+      <p class="empty">Your cart is empty.</p>
+      <div class="content">
+        <div class="cart-product">
+          <img src="images/image-product-1-thumbnail.jpg">
+          <div>
+            <p>Fall Limited Edition Sneakers</p>
+            <span class="small-current-price">$125.00</span>
+            <span style="color:hsl(219, 9%, 45%);">x</span>
+            <span class="count small-current-price">0</span>
+            <span class="total">$000.00</span>
           </div>
-          <button id="checkout">Checkout</button>
+          <img src="images/icon-delete.svg" class="delete"
+               style="height:17px;cursor:pointer;margin-left: 15px">
         </div>
+        <button id="checkout">Checkout</button>
       </div>
     </div>
   </header>
@@ -75,7 +79,7 @@
       <div class="add-to-cart">
         <div class="products-number">
           <button id="minus">-</button>
-          <span id="count">0</span>
+          <p id="count">0</p>
           <button id="plus">+</button>
         </div>
         <button class="add"><img src="images/icon-cart.svg">Add to cart</button>
