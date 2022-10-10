@@ -358,6 +358,14 @@ button.add:hover, #checkout:hover{
 #close:hover {
     filter: contrast(500%) invert(1) ;
 }
+.close-menu {
+    display: none;
+    height: 1.5rem;
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    z-index: 11;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -382,14 +390,6 @@ button.add:hover, #checkout:hover{
     }
     .list li {
         margin-bottom: 1rem;
-    }
-    .close-menu {
-        display: none;
-        height: 1.5rem;
-        position: fixed;
-        left: 25px;
-        top: 25px;
-        z-index: 11;
     }
     br {
         display: none;
